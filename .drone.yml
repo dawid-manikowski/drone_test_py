@@ -17,5 +17,5 @@ steps:
 - name: Deployment
   image: python:3
   commands:
-  - python:3 -c "print('DEPLOYING!')"
+  - python3 -c "print('DEPLOYING!')"
 
