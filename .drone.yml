@@ -3,19 +3,19 @@ name: test_1
 
 steps:
 - name: Install deps
-  image: python3
+  image: python:3
   commands:
   - pip3 install -r requirements.txt
 
 - name: Run some stuff
-  image: python3
+  image: python:3
   commands:
   - uname -a
   - ls -la
   - sleep 1
 
 - name: Deployment
-  image: python3
+  image: python:3
   commands:
-  - python3 -c "print('DEPLOYING!')"
+  - python:3 -c "print('DEPLOYING!')"
 
