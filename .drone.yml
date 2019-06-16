@@ -14,3 +14,8 @@ steps:
   - ls -la
   - sleep 1
 
+- name: Deployment
+  image: python3
+  commands:
+  - python3 -c "print('DEPLOYING!')"
+
