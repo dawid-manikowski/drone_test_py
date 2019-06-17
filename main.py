@@ -17,6 +17,8 @@ def list_resources():
         ]
     })
 
+# To jest branch master
+
 @app.route("/version_info")
 def app_version():
     return str(APP_VERSION)
